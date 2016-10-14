@@ -1,0 +1,296 @@
+body {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    width: 994px;
+    height: 100%;
+    background: url("images/bg.png") repeat;
+    background-size: cover;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.container-main {
+    max-width: 100%;
+
+    margin: 0 auto;
+    width: 994px;
+
+    box-shadow: 1px 1px 5px #505050;
+}
+
+.container-gen {
+    width: 900px;
+    height: 1727px;
+    max-width: 100%;
+    /*max-height: 100%;*/
+    /*margin: 0 auto;*/
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('font/HelveticaNeueLTStd Lt.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~ typographie ~~~~~~~~~~~~~~~~~~~~*/
+
+h1, h2, span, .bar {
+    color: #505050;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 52px;
+    display: initial;
+}
+
+.gauche p, .colones p {
+    color: #505050;
+}
+
+h2 {
+    color: #505050;
+}
+
+.paragraphe h2 {
+    font-size: 28px;
+}
+
+.head-paragraphe {
+    color: #a6a6a6;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~ partie-haute ~~~~~~~~~~~~~~~~~~*/
+
+.top {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.partie-haute {
+    width: 100%;
+    height: 15%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.mid {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.titre {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.gauche {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.loupe {
+    display: flex;
+    width: 34px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+}
+
+.bar {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 59px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background-color: #dddddd;
+}
+
+.bar ul {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 59px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar ul li, .colones ul li {
+    margin: auto;
+    list-style: none;
+}
+
+.bar ul li a {
+    text-decoration: none;
+    color: #606060;
+}
+
+.bar ul li:hover ul {
+    display: inline-block;
+    width: 10%;
+    height: 100px;
+    background-color: #cccccc;
+    position: absolute;
+}
+
+.bar ul li:hover ul li {
+    height: 33px;
+    background-color: #cccccc;
+}
+
+.bar li:hover ul li {
+    float: none;
+}
+
+.bar ul li {
+    display: block;
+    height: 59px;
+}
+
+.bar li ul {
+    position: absolute;
+}
+
+.bar ul li ul {
+    margin: 0;
+    padding: 0;
+    margin-left: -50px;
+    padding: 0;
+    /* display: inline-block; */
+    text-align: center;
+    width: 10%;
+    margin-top: 19px;
+    display: none;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~ pics ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.pics-container img {
+    width: 100%;
+    height: 29.41%;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pics-container {
+    padding-top: 25px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ head-paragraphe ~~~~~~~~~~~~~~*/
+
+.head-paragraphe {
+    width: 100%;
+    /*height: 3.47%;*/
+    /*display: flex;
+    flex-flow: column;*/
+    text-align: center;
+}
+
+.head-paragraphe p {
+    padding-top: 22px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.head-paragraphe h2 {
+    font-size: 28px;
+    margin: 0 auto;
+    padding-top: 38px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ paragraphe ~~~~~~~~~~~~~~~~~~~~*/
+
+.paragraphe {
+    width: 100%;
+    height: 38%;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    color: #606060;
+}
+
+.paragraphe p {
+    margin: 0 auto;
+}
+
+.down-paragraphe {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.down-paragraphe .bar {
+    height: 40px;
+}
+
+.down-paragraphe p {
+    text-align: center;
+    color: #606060;
+    bottom: 5px;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bottom ~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.bottom {
+    width: 100%;
+    height: 20.3%;
+    display: flex;
+    background-color: #dddddd;
+    background-size: cover;
+}
+
+.colones-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 235px;
+    width: 100%;
+
+}
+
+.colones {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding-left: 25px;
+    margin: auto;
+    width: 100%;
+}
+
+.colone p {
+    width: 100%;
+    height: 100%;
+}
